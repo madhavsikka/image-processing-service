@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<title>Uploader</title>
+<body>
+<h1>Uploader</h1>
+<hr/>
+<h4>Upload File:</h4>
+<form method="POST" th:action="@{/file/upload}" enctype="multipart/form-data">
+    <input type="file" name="file"/> <br/><br/>
+    <label for="width">Width: </label>
+    <input type="text" id="width" name="width"><br><br>
+    <label for="height">Height: </label>
+    <input type="text" id="height" name="height"><br><br>
+    <button type="submit">Submit</button>
+</form>
+<hr/>
+<!--<div t&lt;!&ndash;h:if="${message}">-->
+<!--    <h2 th:text="${message}"/>-->
+<!--</div>&ndash;&gt;-->
+</body>
+</html>
