@@ -1,4 +1,7 @@
-﻿# Image Processing
+﻿# Image Processing Service
+
+- This is a scalable service for resizing images online
+- Uses: Spring Boot, Kafka, and Server Sent Events (SSE)
 
 ### Steps to Run:
 1.  Run in terminal: `docker-compose -f docker-compose.yml up`
@@ -6,7 +9,9 @@
 
 ![Data Flow](./dataflow.png)
 
+![Result](./result.png)
+
 ### Todo
-1. Load balancer for uploader and status service
-2. Cleanup service for files which will expire after timeout
-3. Images stored locally. Change to a hosting service
+1. Add load balancers for services
+2. Add a cleanup service for files which will remove expired files from the system
+3. Images stored locally. Change to a cloud storage
