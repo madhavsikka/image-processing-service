@@ -2,6 +2,7 @@
 
 - This is a scalable service for resizing images online
 - Uses: Spring Boot, Kafka, and Server Sent Events (SSE)
+- All images are available on docker hub
 
 ### Steps to Run:
 1.  Run in terminal: `docker-compose -f docker-compose.yml up`
